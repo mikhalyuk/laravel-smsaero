@@ -1,5 +1,5 @@
 {
-  "name": "vasya-mikhalyuk/laravel-smsaero",
+  "name": "mikhalyuk/laravel-smsaero",
   "description": "smsaero.ru API wrapper for Laravel",
   "keywords": ["smsaero", "sms", "laravel"],
   "license": "MIT",

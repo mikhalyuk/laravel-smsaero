@@ -5,7 +5,7 @@ This package is very easy to set up. There are only couple of steps.
 ### Composer
 
 ```
-composer require vasya-mikhalyuk/laravel-smsaero
+composer require mikhalyuk/laravel-smsaero
 ```
 
 ### Service Provider
