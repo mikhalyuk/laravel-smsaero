@@ -14,7 +14,7 @@ class SmsAeroServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/smsaero.php' => config_path('smsaero.php')
+            __DIR__ . '/config/smsaero.php' => config_path('smsaero.php')
         ], 'config');
     }
 
@@ -25,6 +25,6 @@ class SmsAeroServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../../config/smsaero.php', 'smsaero');
+        $this->mergeConfigFrom(__DIR__ . '/config/smsaero.php', 'smsaero');
     }
 }
