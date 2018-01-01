@@ -1,0 +1,25 @@
+{
+  "name": "vasya-mikhalyuk/laravel-smsaero",
+  "description": "smsaero.ru API wrapper for Laravel",
+  "keywords": ["smsaero", "sms", "laravel"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vasya Mikhalyuk",
+      "email": "vasiliy.mikhalyuk@yahoo.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": ">=4.2"
+  },
+  "require-dev": {
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mikhalyuk\\SmsAero\\": "src/"
+    }
+  }
+}
