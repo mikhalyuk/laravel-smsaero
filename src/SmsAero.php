@@ -62,6 +62,9 @@ class SmsAero
                     'to' => $to,
                     'text' => $text,
                     'from' => $this->sign,
+                    'date' => $date,
+                    'digital' => $digital,
+                    'type' => $type,
                     'answer' => 'json'
                 ]
             ), true
