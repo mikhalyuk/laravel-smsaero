@@ -52,7 +52,7 @@ class SmsAero
      * @param string $text - text
      * @return array
      */
-    public function send($to, $text)
+    public function send($to, $text, $date = false, $digital = 0, $type = 2)
     {
         return json_decode(
             self::curl_post($this->url . '/send/',
@@ -62,6 +62,24 @@ class SmsAero
                     'to' => $to,
                     'text' => $text,
                     'from' => $this->sign,
+                    'answer' => 'json'
+                ]
+            ), true
+        );
+    }
+
+    /**
+     * Message status
+     * @param integer $id - message id
+     * @return array
+     */
+    public function status ($id){
+        return json_decode(
+            self::curl_post($this->url . '/status/',
+                [
+                    'user' => $this->login,
+                    'password' => $this->password,
+                    'id' => $id,
                     'answer' => 'json'
                 ]
             ), true
